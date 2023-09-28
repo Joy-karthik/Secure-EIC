@@ -1,8 +1,8 @@
 # Secure-EIC
-This repository have a document of the secure EIC feature
+This repository has a document of the secure EIC feature
 
 
-#Create the secure EIC connection
+#Create a secure EIC connection
 
     1. Begin by establishing a secure endpoint.
     2. Next, create two security groups: one for the private instance and another for the endpoint connection
@@ -58,7 +58,7 @@ Use this custom policy for the EIC connection
 }
 
 
-#Second Apperance--->Remove the authorization only access the instance
+#Second Appearance--->Remove the authorization only access the instance
 
 
 {
@@ -78,7 +78,7 @@ Use this custom policy for the EIC connection
 }
 
 
-#Third Apperance--->Specific instance appear but this policy you might be get a error. so use 4th policy
+#Third Appearance --->Specific instance appears but in this policy, you might get an error. so use 4th policy
 
 {
     "Version": "2012-10-17",
@@ -97,7 +97,7 @@ Use this custom policy for the EIC connection
 }
 
 
-#4th Apperance-->This policy one access the specfic instnace and allow the all endpoint
+#4th Appearance-->This policy one access the specific instance and allows all endpoint
 
 {
     "Version": "2012-10-17",
@@ -119,7 +119,7 @@ Use this custom policy for the EIC connection
 }
 
 
-#Fifth Apperance--->This is a full of restriction policy allow the specfic endpoint and specfic connection
+#Fifth Appearance--->This is a full restriction policy that allows the specific endpoint and specific connection
 
 {
     "Version": "2012-10-17",
