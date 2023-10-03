@@ -139,3 +139,35 @@ Use this custom policy for the EIC connection
         }
     ]
 }
+
+
+
+#Finalize the Appearance
+
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Sid": "VisualEditor0",
+			"Effect": "Allow",
+			"Action": [
+				"ec2:DescribeInstances",
+				"ec2:DescribeInstanceConnectEndpoints"
+			],
+			"Resource": "*"
+		},
+		{
+			"Sid": "VisualEditor1",
+			"Effect": "Allow",
+			"Action": [
+				"ec2-instance-connect:OpenTunnel",
+				"ec2-instance-connect:SendSSHPublicKey",
+				"ec2-instance-connect:SendSerialConsoleSSHPublicKey"
+			],
+			"Resource": [
+				"arn:aws:ec2:ap-south-1:744096931876:instance-connect-endpoint/eice-03cec2d7947718afb",
+				"arn:aws:ec2:ap-south-1:744096931876:instance/i-0e110b0469e3c0a8c"
+			]
+		}
+	]
+}
